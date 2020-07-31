@@ -37,6 +37,11 @@ rcthrow.register_throw("throw_weapons:steel_hatchet", {
 })
 ```
 
+## Strength
+
+- The strength definition is maximum value.
+- The real throwing strength will depend on the player health.
+
 ## primary_use Definition
 
 You can use the tool as a regular tool plus throw it.
