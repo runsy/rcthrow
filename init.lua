@@ -7,10 +7,9 @@ local DEFAULT_MAX_HEAR_DISTANCE = 10
 local DEFAULT_GAIN = 0.5
 
 function rcthrow.spawn_item_ent(item_ent, user, strength, wear)
-	--get player_hp
-	--local player_hp = user:get_hp()
-	--local percent_hp = (20 - player_hp) / 100
-	--strength = strength * percent_hp
+	local player_hp = user:get_hp()
+	local percent_hp = player_hp / 20
+	strength = strength * percent_hp
 	local pos = user:get_pos()
 	pos.y = pos.y + 1.5 -- camera offset
 	local dir = user:get_look_dir()
